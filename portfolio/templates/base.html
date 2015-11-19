@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+
+  <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!--my own style-->
+  <link rel="stylesheet" href="static/style.css"/>
+
+  <!--fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,600,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  <!--font awesome icons-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!--javascript alert-->
+  <script>
+    function myFunction() {
+      alert("Sorry, this page is under construction!");
+    }
+  </script>
+
+</head>
+ <body>
+
+   <header>
+     <div class="header-content">
+       <div class="header-name">
+         <a href="index">Diane Pham</a>
+       </div>
+
+       <nav>
+         <ul>
+
+           <li><a href="index"
+             {% if name == "index" %}
+                class = "current"
+                  {% endif %}
+              >Home</a></li>
+
+           <li><a href="about"
+             {% if name == "about" %}
+              class = "current"
+              {% endif %}>About</a></li>
+
+           <li><a href="resume"
+             {% if name == "resume" %}
+              class = "current"
+              {% endif %}>Resume</a></li>
+
+           <li><a href="contact" {% if name == "contact" %}
+              class = "current"
+              {% endif %}>Contact</a></li>
+         </ul>
+       </nav>
+     </div>
+ </header>
+
+    {% block content %}
+      You should never see this!!
+    {% endblock %}
+
+    <footer>
+      {% extends "footer.html" %}
+    </footer>
+  </body>
+</html>

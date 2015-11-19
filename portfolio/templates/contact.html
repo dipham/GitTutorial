@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+<!-- Another Option - Use block instead of variable -->
+<!-- {% block title %}
+Home
+{% endblock %} -->
+
+{% block content %}
+<main class="site-content">
+  <div class="wrapper">
+    <section id="form">
+      <h2>Contact Me!</h2>
+      <hr>
+      <ul class="contact-ul">
+        <li>
+          <i class="fa fa-envelope"></i> dipham@umich.edu
+        </li>
+        <li>
+          <i class="fa fa-phone"></i> (000)123-4567
+        </li>
+        <li>
+          <i class="fa fa-map"></i> 123 Main Street
+        </li>
+      </ul>
+      <br>
+      <form>
+        <label for="name">Your Name:</label><br>
+        <input type="text" name="name" id="name">
+      <br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="message">Message:</label>
+        <br>
+        <textarea name="message" rows="8" id="message"></textarea>
+        <br><br>
+        <input type="submit" value="Submit" onClick="myFunction()">
+      </form>
+    </section>
+  </div>
+</main>
+{% endblock %}

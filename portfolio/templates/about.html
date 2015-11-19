@@ -1,0 +1,24 @@
+
+
+{% extends "base.html" %}
+<!-- Another Option - Use block instead of variable -->
+<!-- {% block title %}
+Home
+{% endblock %} -->
+
+{% block content %}
+<main class="site-content">
+<div class="container">
+  <div class="about">
+      <img src="static/me.jpg" alt="A picture of me"/>
+        <div class="paragraph-content">
+          <h2>Hi, I'm Diane.</h2>
+          <p>I'm a first year graduate student at the University of Michigan School of Information specializing in Human-Computer Interaction. I'm interested in designing products and websites people love to use. I want to get close with users to understand their needs and design with users in mind. </p>
+          <p>Before coming to Michigan, I studied at the University of Iowa for undergrad, double majoring in International Studies and Informatics with a minor in psychology.</p>
+          <p>I'm also highly involved with the Vietnamese-American community in the Midwest and the Union of Vietnamese Student Associations of the Midwest (UVSA-MW). Check out what else I've been up to on <a href="http://www.uvsamidwest.org">UVSA-MW's website.</a></p>
+          <p>In my free time, I enjoy eating at new restaurants, watching soccer, and sleeping.</p>
+        </div>
+  </div>
+</div>
+</main>
+{% endblock %}

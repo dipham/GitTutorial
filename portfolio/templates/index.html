@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+<!-- Another Option - Use block instead of variable -->
+<!-- {% block title %}
+Home
+{% endblock %} -->
+
+{% block content %}
+<main class="site-content">
+
+  <div class="tagline">
+    <h2>MY PORTFOLIO</h2>
+    <h3>Check out my recent work!</h3>
+  </div>
+
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 portfolio-item">
+      <div class="hovereffect">
+        <img class="img-responsive" src="static/db.PNG" alt="Database"/>
+          <div class="overlay">
+            <a class="info" href="#portfolioModal1" data-toggle="modal">Database Design</a>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-4 portfolio-item">
+      <div class="hovereffect">
+        <img class="img-responsive" src="static/pcc.PNG" alt="Drupal"/>
+          <div class="overlay">
+            <a class="info" href="#portfolioModal3" data-toggle="modal">Drupal</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 portfolio-item">
+      <div class="hovereffect">
+        <img class="img-responsive" src="static/uvsamw.jpg" alt="Wordpress Site"/>
+          <div class="overlay">
+            <a class="info" href="#" onClick="myFunction()">Wordpress</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 portfolio-item">
+      <div class="hovereffect">
+        <img src="static/id.jpg" alt="Interaction Design" class="img-responsive"/>
+          <div class="overlay">
+            <a class="info" href="#portfolioModal2" data-toggle="modal">Interaction Design</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 portfolio-item">
+      <div class="hovereffect">
+        <img class="img-responsive" src="static/gas.jpg" alt="Google App Script"/>
+          <div class="overlay">
+            <a class="info" href="#" onClick="myFunction()">Google App Script</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 portfolio-item">
+      <div class="hovereffect">
+        <img class="img-responsive" src="static/tumblr.PNG" alt="Newsfeed"/>
+          <div class="overlay">
+            <a class="info" href="#" onClick="myFunction()">Newsfeed</a>
+          </div>
+      </div>
+    </div>
+  </div><!--closes row-->
+</div><!--closes container-->
+
+<!-- Portfolio Modals -->
+   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+       <div class="modal-content">
+           <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                   <div class="rl">
+                   </div>
+               </div>
+           </div>
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-8 col-lg-offset-2">
+                       <div class="modal-body">
+                           <h2>Database Management</h2>
+                           <hr>
+                           <img src="static/database.PNG" class="img-responsive img-centered" alt="Database Query">
+                           <ul class="list-inline item-details">
+                               <li><strong>Client:</strong>
+                                   University of Iowa Running Club
+                               </li>
+                               <li><strong>Date:</strong>
+                                   Fall 2014
+                               </li>
+                               <li><strong>Category:</strong>
+                                   SQL, Database, ASP.NET
+                               </li>
+                           </ul>
+                           <h3>Overview</h3>
+                           <p>The club needed a database to keep track of membership, attendance at races and clinics, multiple committees’ and the executive board’s activities, and merchandising. We had to integrate their current storage needs with possible future requirements as they are a growing club at the University. The main users of our database will be the Executive Board, or occasionally members of some committees. Once all tables and inserted details have a front end, anyone can operate the database easily and logically. </p>
+                           <h3>Process</h3>
+                           <img src="static/model.PNG" class="img-responsive img-centered" alt="Conceptual Model">
+                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+       <div class="modal-content">
+           <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                   <div class="rl">
+                   </div>
+               </div>
+           </div>
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-8 col-lg-offset-2">
+                       <div class="modal-body">
+                           <h2>Interaction Design</h2>
+                           <hr>
+                           <img src="static/cpp.PNG" class="img-responsive img-centered" alt="Database Query">
+                           <ul class="list-inline item-details">
+                               <li><strong>Class:</strong>
+                                   Introduction to Interaction Design
+                               </li>
+                               <li><strong>Date:</strong>
+                                   Fall 2015
+                               </li>
+                               <li><strong>Category:</strong>
+                                  Interaction Design
+                               </li>
+                           </ul>
+                           <h3>Overview:</h3>
+                           <p>Context and Problem: UVSA-Midwest and its members raise money for a different charity each year, referred to as the Collective Philanthropy Project or CPP. The problem is that members have a hard time fundraising money which could stem from a lack of education about CPP (for example, what is the charity about, where is the money going to) or lack of knowledge on how to fundraise. The solutions I drew are about fundraising ideas, how to learn fundraising ideas, and how to learn about CPP.</p>
+                           <h3>Process:</h3>
+                           <h4>Competitive Analysis</h4>
+                           <p>My current interface is a website that would contain information about the charity and fundraising idea and ways to donate money. For my competitive analysis, I looked at various online fundraising websites aimed at raising money and awareness. While I’m more interested in teaching members to properly fundraise themselves, it might be worthwhile to see if using a fundraising website would be easier to implement and/or more effective at helping raise money. I am most interested in websites that can have personalized information pages and allow for social interaction.
+</p>
+                           <h4>Brainstorming</h4>
+                           <img src="static/sketch.PNG" class="img-responsive img-centered" alt="Interaction Design Sketches">
+                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+       <div class="modal-content">
+           <div class="close-modal" data-dismiss="modal">
+               <div class="lr">
+                   <div class="rl">
+                   </div>
+               </div>
+           </div>
+           <div class="container">
+               <div class="row">
+                   <div class="col-lg-8 col-lg-offset-2">
+                       <div class="modal-body">
+                           <h2>Drupal</h2>
+                           <hr>
+                           <img src="static/pomerantz.PNG" class="img-responsive img-centered" alt="Database Query">
+                           <ul class="list-inline item-details">
+                               <li><strong>Client:</strong>
+                                   University of Iowa Pomerantz Career Center
+                               </li>
+                               <li><strong>Date:</strong>
+                                   Summer 2014
+                               </li>
+                               <li><strong>Category:</strong>
+                                   Content Management
+                               </li>
+                           </ul>
+                           <h3>Overview</h3>
+                           <p>The University of Iowa's Pomerantz Career Center sought to convert their former website to Drupal in order to make a more accessible and fit in with the rest of the University-wide websites.</p>
+                           <h3>Process</h3>
+                           <p>Design aspects that were heavily considered while migrating content to Drupal were accessibility, responsive design, and information architecture.</p>
+                           <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+</main>
+
+{% endblock %}
